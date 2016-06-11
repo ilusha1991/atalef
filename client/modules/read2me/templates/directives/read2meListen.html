@@ -1,0 +1,73 @@
+<div layout="column" layout-align="center center">
+
+    <div class="block">
+    </div>
+
+    <div class="header-listen" layout="row" layout-align="start center">
+        <div ng-show="hasAudio" layout="row">
+            <md-button class="button"
+                       layout="row"
+                       layout-align="center center"
+                       ng-click="seekBack()">
+
+                <img class="button-for-rew" src="../../../../assets/images/15seconds_rewind_idle.png">
+            </md-button>
+
+            <md-button
+                       class="play-button"
+                       layout="row"
+                       layout-align="center center"
+                       ng-click="switchPlaying()">
+
+                <img ng-show="!isPlaying" class="play-button-img" src="../../../../assets/images/play_idle.png">
+                <img ng-show="isPlaying" class="play-button-img" src="../../../../assets/images/Pause_idle.png">
+            </md-button>
+
+            <md-button class="button"
+                       layout="row"
+                       layout-align="center center"
+                       ng-click="seekForward()">
+
+                <img class="button-for-rew" src="../../../../assets/images/15seconds_forward_idle.png">
+            </md-button>
+
+
+            <div layout="row" layout-align="start center">
+                <p id="cur_time">0:00</p>
+                <md-progress-linear class="progress-bar"
+                                    id="prog_bar"
+                                    md-mode="determinate"
+                                    value="{{progValue}}"
+                                    style="height: 10px;width: 250px;">
+                </md-progress-linear>
+                <p id="duration">0:00</p>
+            </div>
+
+        </div>
+        <div ng-show="!hasAudio">
+            <P>:-( we couldn't get the voice file</P>
+        </div>
+    </div>
+    <div class="divider"></div>
+
+    <div class="content rtl">
+        <b><p ng-bind-html="title"></p></b>
+        <p ng-bind-html="article"></p>
+    </div>
+
+    <md-progress-circular ng-show="!isContentLoaded" md-mode="indeterminate">
+
+    </md-progress-circular>
+
+    <div ng-show="false">
+        <audio id="audio" controls>
+            <source id="wavSource" type="audio/wav"/>
+        </audio>
+    </div>
+
+    <div class="footer">
+
+    </div>
+
+
+</div>

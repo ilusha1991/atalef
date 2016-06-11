@@ -1,0 +1,43 @@
+<div class="record" layout="column" layout-align="center center">
+    <div class="block">
+    </div>
+
+    <div class="header-record" layout="column"  layout-align="center center">
+        <div layout="row" layout-align="start center">
+            <md-button ng-click="switchPlaying()" class="button" layout="row" layout-align="center center">
+                <img ng-show="!isPlaying" class="upload-button" src="../../../../assets/images/SmallPlay_idle.png">
+                <img ng-show="isPlaying" class="upload-button" src="../../../../assets/images/SmallPlay_active.png">
+            </md-button>
+
+            <md-button ng-click="switchRecording()" class="play-button" layout="row" layout-align="center center">
+                <img ng-show="!isRecroding" class="play-button-img" src="../../../../assets/images/record_idle.png">
+                <img ng-show="isRecroding" class="play-button-img" src="../../../../assets/images/stop_idle.png">
+            </md-button>
+
+            <md-button ng-click="uploadAudio()" class="button" layout="row" layout-align="center center">
+                <img class="button-img" src="../../../../assets/images/Upload-to-Cloud.png">
+            </md-button>
+            <b id="cur_time" layout="row">0:00</b>
+            <md-progress-linear layout="row" class="progress-bar" id="prog_bar" md-mode="{{inDeterminate}}"
+                                value="{{progValue}}"></md-progress-linear>
+            <b id="duration" layout="row"></b>
+        </div>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="content rtl">
+        <div layout="row" layout-align="center center">
+            <md-progress-circular md-diameter="96" ng-show="!isContentLoaded" md-mode="indeterminate"/>
+        </div>
+        <b><p ng-bind-html="title"></p></b>
+        <p ng-bind-html="article"></p>
+    </div>
+    <audio ng-show="false" controls autoplay></audio>
+
+    <div class="footer">
+
+    </div>
+
+</div>

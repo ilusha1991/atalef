@@ -1,0 +1,234 @@
+.dashboard-sidenav {
+    background-color: white;
+    width: 100%;
+}
+.dashboard-sidenav-content {
+    padding: 0 5px;
+    background-color: #2196F3;
+    overflow: hidden;
+}
+.dashboard-navbar-wrapper {
+    background-color: #2196F3;
+    min-height: 100%;
+}
+.dashboard-wrapper {
+    height: 100%;
+}
+.sidenav-btn {
+    min-width: 100%;
+    text-transform: none;
+    background-color: white;
+    display: flex;
+}
+.dashboard-content {
+    background-color: white;
+    border-width: 1px;
+    padding: 10px;
+    /*    margin: 10px;*/
+    width: 98%;
+    height: 100%;
+}
+.dashboard-top-rounded-toolbar {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.dashboard-content-wrapper {
+    background-color: #2196F3;
+    /*	padding: 10px;*/
+    width: 100%;
+    height: 100%;
+}
+.grid-item {
+    border-color: black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: auto;
+}
+md-menu-item > .md-button {
+    display: flex;
+}
+.dashboard-layout {
+    height: 100%;
+}
+
+.profile-actions {
+    width: 5%;
+    height: 100%;
+}
+.profile-page {
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    padding: 10px;
+}
+.padding {
+    padding: 15px;
+}
+.profile-content-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.dashboard-list-text {
+    font-family: cursive;
+}
+.dashboard-special-list-item {
+    background-color: whitesmoke;
+}
+.hebrew-text {
+    text-align: right;
+}
+.renovation-map {
+    padding: 10px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    height: 100%;
+}
+.renovation-page-tab-wrapper {
+    width: 99%;
+}
+.renovation-page-chat-wrapper {
+    width: 5%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.renovation-page-map-wrapper {
+    width: 50%;
+    min-width: 500px;
+    min-height: 500px;
+}
+.renovation-page-tab-control,
+.renovation-page-tab-control .renovation-header{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+/*    padding-top: 5%;*/
+}
+.renovation-header{
+    background-image: url("/assets/img/renoPageHeader2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+}
+.renovation-header .chat-button{
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+}
+.box h3 {
+    text-align: center;
+    position: relative;
+    top: 80px;
+}
+.box {
+    /*	width:70%;*/
+    /*	height:200px;*/
+    background: white;
+    margin: 40px auto;
+}
+
+.renovation-task{
+    display: inherit;
+    margin-right: 5%;
+}
+.renovation-inner-grid-list{
+    overflow: auto;
+}
+
+/*==================================================
+ * Effect 7
+ * ===============================================*/
+
+.effect7 {
+    position: relative;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect7:before,
+.effect7:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    border-radius: 100px / 10px;
+}
+.effect7:after {
+    right: 10px;
+    left: auto;
+    transform: skew(8deg) rotate(3deg);
+}
+
+/*==================================================
+ * End Effect 7
+ * ===============================================*/
+
+.pinned-frame {
+    border-color: burlywood;
+    border-width: 7px;
+    border-style: solid;
+    border-radius: 5px;
+    min-height: 100px;
+    min-weight: 100px;
+    padding: 15px;
+}
+.pinned-message {
+    background-color: #ffffb3;
+    min-height: 50px;
+    min-width: 50px;
+}
+.pinned-wrapper {
+    margin-left: 5px;
+    margin-right: 5px;
+	position: relative;
+}
+.pinned-delete-button{
+	position: absolute;
+	top: 10px;
+	left: 0;
+}
+.box-header {
+    /*	margin-left: 5%; */
+    margin-right: 5%;
+}
+.renovation-tabs {
+    background-color: white;
+}
+.box-wrapper {
+    margin: 2%;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    background-color: white;
+}
+.test {
+    background-color: grey;
+}
+.shadow-text {
+/*    margin: 50px auto;*/
+    text-align: center;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: white;
+    opacity: 1;
+    
+}
+.shadow-text.medium{
+    font: 700 40px 'Bitter';
+}
+.shadow-text.large{
+    font: 700 80px 'Bitter';
+}
+
+.dialog.list{
+	overflow: auto;
+	max-height: 30%;
+}
+
+.rsvp-button{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}

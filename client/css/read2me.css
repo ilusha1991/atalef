@@ -1,0 +1,119 @@
+.record {
+    height: 100%;
+    background: #5d5d5d;
+}
+
+.listen {
+    height: 100%;
+    background: #5d5d5d;
+}
+
+.block {
+    height: 48px;
+    width: 100%;
+    background: #5d5d5d;
+    position: fixed;
+}
+
+.footer {
+    height: 48px;
+    width: 100%;
+    background: #5d5d5d;
+}
+
+.header-listen {
+    width: 720px;
+    height: 100px;
+    margin-top: 48px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+
+    /*background: red; !* For browsers that do not support gradients *!*/
+    background: -webkit-linear-gradient(left, #2bb673, #00a79d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #2bb673, #00a79d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #2bb673, #00a79d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #2bb673, #00a79d); /* Standard syntax */
+}
+
+.header-record {
+    width: 720px;
+    height: 100px;
+    margin-top: 48px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    /*background: red; !* For browsers that do not support gradients *!*/
+    background: -webkit-linear-gradient(left, #27aae1, #3ec7f4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #27aae1, #3ec7f4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #27aae1, #3ec7f4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #27aae1, #3ec7f4); /* Standard syntax */
+}
+
+.button-img {
+    width: 38px;
+    height: 23px;
+}
+
+.button-for-rew {
+    width: 30px;
+    height: 30px;
+}
+
+.upload-button {
+    width: 30px;
+    height: 30px;
+}
+
+.button {
+    width: 30px;
+    height: 60px;
+
+    padding: 0;
+    margin: 0;
+}
+
+.play-button {
+    padding: 0;
+    margin: 0;
+
+}
+
+.play-button-img {
+    width: 50px;
+    height: 50px;
+}
+
+.container {
+
+}
+
+.content {
+    width: 720px;
+    height: 100%;
+    margin-top: 148px;
+    background-color: white;
+
+    padding: 16px;
+}
+
+.progress-bar {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 350px;
+    height: 10px;
+}
+
+.gray-background {
+    background-color: #5d5d5d;
+}
+
+.divider {
+    background-color: #9C9B9C;
+    width: 720px;
+    height: 3px;
+    margin-top: 148px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+}

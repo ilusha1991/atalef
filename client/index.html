@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="ProjectHands">
+
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-signin-client_id"
+          content="990301468716-ubc9ojva16mhq03k1sb88k2djruph8is.apps.googleusercontent.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project 'Hands'</title>
+
+    <!-- Vendor -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="vendor/angular-material/angular-material.css" rel="stylesheet">
+    <link href="vendor/angular-gridster/dist/angular-gridster.min.css" rel="stylesheet">
+    <link href="vendor/fullcalendar/dist/fullcalendar.css" rel="stylesheet">
+
+    <!-- App -->
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/animations.css" rel="stylesheet">
+    <link href="css/toolbar.css" rel="stylesheet">
+    <link href="css/chat.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <link href="css/status.css" rel="stylesheet">
+    <link href="css/signup.css" rel="stylesheet">
+    <link href="css/photos.css" rel="stylesheet">
+    <link href="css/admin.css" rel="stylesheet">
+    <link href="css/profile.css" rel="stylesheet"/>
+    <link href="css/read2me.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+<!--<toolbar></toolbar>-->
+<notifications></notifications>
+<!-- Main Content -->
+<main ui-view id="main-view"></main>
+</body>
+
+<!-- Somewhere on your page -->
+
+<!--- use if you want wave display !-->
+<!--<script src="/path/to/wavesurfer/wavesurfer.min.js"></script>-->
+
+
+<!-- Vendor (3rd party libraries) -->
+<script src="vendor/jquery/dist/jquery.js"></script>
+<script src="vendor/angular/angular.min.js"></script>
+<script src="vendor/angular-aria/angular-aria.min.js"></script>
+<script src="vendor/angular-animate/angular-animate.min.js"></script>
+<script src="vendor/angular-messages/angular-messages.min.js"></script>
+<script src="vendor/angular-resource/angular-resource.min.js"></script>
+<script src="vendor/angular-cookies/angular-cookies.js"></script>
+<script src="vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="vendor/ui-router-extras/release/ct-ui-router-extras.min.js"></script>
+<script src="vendor/angular-material/angular-material.js"></script>
+<script src="vendor/angular-gridster/dist/angular-gridster.min.js"></script>
+<script src="vendor/angular-ui-calendar/src/calendar.js"></script>
+<script src="vendor/javascript-detect-element-resize/jquery.resize.js"></script>
+<script src="vendor/moment/min/moment.min.js"></script>
+<script src="vendor/fullcalendar/dist/fullcalendar.min.js"></script>
+<script src="vendor/fullcalendar/dist/gcal.js"></script>
+<script src="vendor/crypto-js/crypto-js.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/ng-file-upload-shim.min.js"></script> <!-- for no html5 browsers support -->
+<script src="js/ng-file-upload.min.js"></script>
+<!--<script src="js/angular-audio-recorder.min.js"></script>-->
+<script src="js/angular-audio-recorder.js"></script>
+<script src="js/recorderWorker.js"></script>
+
+<!-- App -->
+<script src="js/app.js"></script>
+<script src="js/routes.js"></script>
+
+<script src="modules/auth/auth.module.js"></script>
+<script src="modules/auth/routes.js"></script>
+
+<script src="modules/read2me/read2me.module.js"></script>
+<script src="modules/read2me/routes.js"></script>
+
+<!-- Controllers -->
+<script src="js/controllers/chatController.js"></script>
+<script src="js/controllers/chatRoomController.js"></script>
+<script src="js/controllers/statusController.js"></script>
+<script src="js/controllers/profileController.js"></script>
+<script src="js/controllers/changePasswordDialogController.js"></script>
+<script src="modules/auth/controllers/loginController.js"></script>
+<script src="modules/auth/controllers/signupController.js"></script>
+<script src="modules/auth/controllers/oauthSignupController.js"></script>
+
+
+<!-- Directives -->
+<script src="js/directives/toolbar.js"></script>
+<script src="js/directives/chat.js"></script>
+<script src="js/directives/chat-room.js"></script>
+<script src="js/directives/notifications.js"></script>
+<script src="js/directives/adminActions.js"></script>
+<script src="js/directives/profile.js"></script>
+
+
+<script src="modules/read2me/directives/read2meRecord.js"></script>
+<script src="modules/read2me/directives/read2meListen.js"></script>
+
+<!-- Services -->
+<script src="js/services/utils.js"></script>
+<script src="js/services/socketio.js"></script>
+<script src="js/services/database.js"></script>
+<script src="js/services/chat.js"></script>
+<script src="js/services/status.js"></script>
+<script src="js/services/user.js"></script>
+<script src="js/services/team.js"></script>
+<script src="js/services/renovation.js"></script>
+<script src="modules/auth/services/auth.js"></script>
+<script src="modules/auth/services/session.js"></script>
+
+
+<script src="modules/read2me/services/read2me.js"></script>
+
+<!-- Filters -->
+<script src="js/filters/capitalize.js"></script>
+
+</html>
