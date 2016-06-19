@@ -67,7 +67,7 @@ router.post('/uploadAudio', multipartyMiddleware, function (req, res) {
     if (req.files.file === undefined || req.files.file === null)
         return res.status(HttpStatus.BAD_REQUEST).send("Error: missing file");
     var name = new Date().getTime() + '.wav';
-    fs.rename(req.files.file.path, 'C:/audioFiles/' + name, function (err) {
+    fs.rename(req.files.file.path, '../audioFiles/' + name, function (err) {
         if (err)
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).send(err);
         res.send({success: true});
@@ -76,7 +76,7 @@ router.post('/uploadAudio', multipartyMiddleware, function (req, res) {
                 console.log(err);
             else {
                 if (result.length == 0) {
-                    saveAudio(req.body.uri, 'C:/audioFiles/' + name, req.body.ownerName, function (err, result) {
+                    saveAudio(req.body.uri, '../audioFiles/' + name, req.body.ownerName, function (err, result) {
                         if (err)
                             console.log(err);
                         else
@@ -88,7 +88,7 @@ router.post('/uploadAudio', multipartyMiddleware, function (req, res) {
                         if (err)
                             console.log(err);
                         else {
-                            saveAudio(req.body.uri, 'C:/audioFiles/' + name, req.body.ownerName, function (err, result) {
+                            saveAudio(req.body.uri, '../audioFiles/' + name, req.body.ownerName, function (err, result) {
                                 if (err)
                                     console.log(err);
                                 else
